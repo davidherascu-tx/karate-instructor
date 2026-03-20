@@ -27,16 +27,17 @@ const partners = [
 
 export default function PartnerPage() {
   return (
-    <div className={`w-full bg-white min-h-screen pt-[200px] pb-32 ${montserrat.className}`}>
+    // Hier wurde pt-[200px] zu pt-28 md:pt-[200px] geändert, um mobil den Abstand zu reduzieren
+    <div className={`w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32 ${montserrat.className}`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
-        {/* Intro Bereich */}
-        <div className="max-w-3xl mb-16">
+{/* Intro Bereich */}
+        <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Netzwerk
           </p>
-          <h1 className="text-5xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.85] mb-6">
-            Partner & <br />Auftraggeber
+          <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
+            Partner & <br className="hidden md:block" />Auftraggeber
           </h1>
           <div className="w-20 h-[2px] bg-red-600 mb-6"></div>
           <p className="text-lg text-zinc-400 font-light tracking-wide">

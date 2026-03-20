@@ -38,16 +38,16 @@ const services = [
 
 export default function DienstleistungenPage() {
   return (
-    <div className="w-full bg-white min-h-screen pt-[200px] pb-32">
+<div className="w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
-        {/* Intro Bereich - Maximale Verdichtung der Zeilenhöhe */}
-        <div className="max-w-3xl mb-16">
+{/* Intro Bereich */}
+        <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Dienstleistungen & Angebot
           </p>
-          <h1 className="text-5xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.8] mb-6">
-            Expertise in <br />Kampfkunst
+          <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
+            Expertise in <br className="hidden md:block" />Kampfkunst
           </h1>
           <p className="text-lg text-zinc-400 font-light leading-relaxed max-w-2xl">
             Professionelle Vermittlung von Werten, Technik und Sicherheit. Maßgeschneiderte Konzepte für höchste Ansprüche.

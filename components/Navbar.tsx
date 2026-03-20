@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// Die Links führen nun zu den neuen Unterseiten
 const navItems = [
   { name: "Portrait", href: "/portrait" },
   { name: "Erfolge", href: "/erfolge" },
@@ -11,9 +10,9 @@ const navItems = [
   { name: "Partner", href: "/partner" },
   { name: "DOJO/Training", href: "/dojo" },
   { name: "Fotos", href: "/#fotos" },
-  { name: "Videos", href: "/#videos" },
+  { name: "Videos", href: "/videos" },
   { name: "Literaturtipps", href: "/literaturtipps" },
-  { name: "Kontakt", href: "/#kontakt" }
+  { name: "Kontakt", href: "/kontakt" }
 ];
 
 export default function Navbar() {
@@ -25,7 +24,6 @@ export default function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Verstecke die Navbar beim Runterscrollen
       if (currentScrollY > lastScrollY && currentScrollY > 80 && !isMobileMenuOpen) {
         setIsVisible(false);
       } else {
@@ -46,9 +44,17 @@ export default function Navbar() {
     >
       {/* 1. Zeile: Name mit dunklem Premium-Hintergrund */}
       <div className="bg-zinc-950 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between md:justify-center items-center py-4">
-          <Link href="/" className="text-lg md:text-xl font-bold tracking-widest uppercase flex items-center text-white no-underline">
-            Siegfried Gelz <span className="text-red-600 font-light mx-3 hidden md:inline">|</span> <span className="hidden md:inline text-zinc-400">Karate Instructor</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between md:justify-center items-center py-3 md:py-4">
+          
+          {/* LOGO BEREICH - Jetzt auch auf Mobile mit "Karate Instructor" */}
+          <Link href="/" className="flex flex-col md:flex-row md:items-center text-white no-underline">
+            <span className="text-lg md:text-xl font-bold tracking-widest uppercase leading-none">
+              Siegfried Gelz
+            </span>
+            <span className="hidden md:inline text-red-600 font-light mx-3">|</span>
+            <span className="text-[9px] md:text-xl text-zinc-400 tracking-[0.3em] md:tracking-widest uppercase mt-1 md:mt-0 font-bold md:font-normal leading-none">
+              Karate Instructor
+            </span>
           </Link>
           
           {/* Hamburger Icon für Smartphone */}
@@ -90,10 +96,7 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-zinc-200 shadow-xl absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
-            <div className="py-3 mb-2 border-b border-zinc-100 text-center">
-              <span className="text-xs tracking-[0.2em] text-red-600 font-bold uppercase">Karate Instructor</span>
-            </div>
+          <div className="px-4 pt-4 pb-6 space-y-1 flex flex-col">
             {navItems.map((item) => (
               <Link
                 key={item.name}

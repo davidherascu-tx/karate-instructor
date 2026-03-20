@@ -46,14 +46,16 @@ function formatKarateDate(dateStr: string) {
 
 export default function ErfolgePage() {
   return (
-    <div className="w-full bg-white min-h-screen pt-[200px] pb-32">
+<div className="w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
-        {/* Intro */}
-        <div className="max-w-3xl mb-12">
-          <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">// Erfolge</p>
-          <h1 className="text-5xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.85] mb-6">
-            Wettkampf & <br />Auszeichnungen
+{/* Intro Bereich */}
+        <div className="max-w-3xl mb-10 md:mb-12">
+          <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
+            // Erfolge
+          </p>
+          <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
+            Wettkampf & <br className="hidden md:block" />Auszeichnungen
           </h1>
           <div className="w-20 h-[2px] bg-red-600 mb-6"></div>
           <p className="text-lg text-zinc-400 font-light tracking-wide">
