@@ -2,64 +2,62 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="w-full bg-white min-h-screen flex flex-col pt-[110px]">
+      
+      {/* --- HERO SECTION --- */}
+      <section className="relative flex-1 w-full max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-8 min-h-[calc(100vh-110px)]">
+        
+        {/* --- WATERMARK JKA LOGO (PARALLAX NUR IM HERO) --- */}
+        {/* bg-fixed sorgt für den Parallax-Effekt, bleibt aber zwingend innerhalb dieser Sektion! */}
+        <div 
+          className="absolute inset-0 z-0 opacity-10 pointer-events-none grayscale bg-fixed bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/jka_logo-min.jpg')",
+            backgroundSize: "min(80vw, 800px)" // Skaliert das Logo auf allen Bildschirmen optimal
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+
+        {/* Text Content */}
+        <div className="flex-1 w-full max-w-2xl text-center md:text-left z-10 pb-12 md:pb-0">
+          <div className="w-12 h-1 bg-red-600 mb-8 mx-auto md:mx-0"></div>
+          
+          {/* Hauptfokus: Karate Instructor */}
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-black text-zinc-900 uppercase tracking-tighter mb-4 leading-[0.9]">
+            Karate <br />
+            Instructor
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          
+          {/* Name etwas kleiner darunter */}
+          <h2 className="text-xl md:text-3xl xl:text-4xl font-light text-zinc-600 tracking-[0.2em] uppercase mb-8">
+            Siegfried Gelz
+          </h2>
+          
+          <p className="text-base md:text-lg xl:text-xl text-zinc-500 font-light leading-relaxed mb-10 max-w-lg xl:max-w-2xl mx-auto md:mx-0">
+            Willkommen auf der offiziellen Website von Siegfried Gelz. Als Karate Instructor mit dem 6. Dan widme ich mein Leben der Perfektionierung und Weitergabe der traditionellen Kampfkunst. Erfahren Sie mehr über meine Philosophie, meine Erfolge und wie auch Sie den Weg des Karate beschreiten können.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          
+          <a 
+            href="#kontakt" 
+            className="inline-block bg-zinc-900 text-white font-bold px-10 py-5 uppercase tracking-[0.2em] text-xs xl:text-sm hover:bg-red-600 transition-colors duration-300 shadow-xl"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            Training anfragen
           </a>
         </div>
-      </main>
+
+        {/* Image Content - Verkleinert für gestochen scharfe Qualität */}
+        <div className="flex-1 w-full flex justify-center md:justify-end items-center self-center h-full py-10 z-10">
+          <Image
+            src="/siegfried_gelz.png"
+            alt="Siegfried Gelz, Karate Instructor"
+            width={600}
+            height={860}
+            className="w-full h-auto max-w-[300px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[500px] object-contain object-center drop-shadow-2xl"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
+          />
+        </div>
+      </section>
+
     </div>
   );
 }
