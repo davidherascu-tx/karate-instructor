@@ -41,12 +41,12 @@ export default function DienstleistungenPage() {
     <div className="w-full bg-white min-h-screen pt-[200px] pb-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
-        {/* Intro Bereich gestrafft */}
+        {/* Intro Bereich - Maximale Verdichtung der Zeilenhöhe */}
         <div className="max-w-3xl mb-16">
           <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Dienstleistungen & Angebot
           </p>
-          <h1 className="text-5xl md:text-8xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.85] mb-6">
+          <h1 className="text-5xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.8] mb-6">
             Expertise in <br />Kampfkunst
           </h1>
           <p className="text-lg text-zinc-400 font-light leading-relaxed max-w-2xl">
@@ -54,7 +54,7 @@ export default function DienstleistungenPage() {
           </p>
         </div>
 
-        {/* Dienstleistungen Liste kompakter */}
+        {/* Dienstleistungen Liste */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20 border-t border-zinc-100 pt-16">
           {services.map((service, index) => (
             <div key={index} className="group">
