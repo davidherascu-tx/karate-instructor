@@ -46,45 +46,49 @@ function formatKarateDate(dateStr: string) {
 
 export default function ErfolgePage() {
   return (
-<div className="w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32">
+    // Responsive Abstände: pt-28 für Mobile, pt-[200px] für Desktop
+    <div className="w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
-{/* Intro Bereich */}
+        {/* Intro - Kontrastreich & mit exaktem leading-[0.95] */}
         <div className="max-w-3xl mb-10 md:mb-12">
-          <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
+          <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Erfolge
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Wettkampf & <br className="hidden md:block" />Auszeichnungen
           </h1>
-          <div className="w-20 h-[2px] bg-red-600 mb-6"></div>
-          <p className="text-lg text-zinc-400 font-light tracking-wide">
+          <div className="w-20 h-[3px] bg-red-700 mb-6"></div>
+          <p className="text-lg md:text-xl text-zinc-700 font-medium tracking-wide">
             Eine Chronik sportlicher Höchstleistungen und internationaler Anerkennung.
           </p>
         </div>
 
         {/* Erfolge Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-16 border-t border-zinc-100 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-16 border-t border-zinc-200 pt-12">
           {achievements.map((item, i) => (
             <div key={i} className="flex flex-col group">
-              {/* Jahr: Zurück zur massiven font-black in edlem Grau */}
-              <span className="text-zinc-300 text-6xl md:text-7xl font-black tracking-tighter mb-2 group-hover:text-zinc-400 transition-colors duration-500">
+              {/* Jahr: Deutlicheres Grau (zinc-400 statt zinc-300) */}
+              <span className="text-zinc-400 text-6xl md:text-7xl font-black tracking-tighter mb-2 group-hover:text-zinc-600 transition-colors duration-500">
                 {item.date.includes('/') ? item.date.split('/')[1] : item.date}
               </span>
               
-              <div className="relative pl-6 border-l border-zinc-200 group-hover:border-red-600 transition-colors duration-500">
-                {/* Monat voll ausgeschrieben */}
+              {/* Dickere, sichtbare Linie (border-l-[3px] border-zinc-200) */}
+              <div className="relative pl-6 border-l-[3px] border-zinc-200 group-hover:border-red-700 transition-colors duration-500">
+                {/* Monat voll ausgeschrieben in dunklerem Rot */}
                 {item.date.includes('/') && (
-                  <span className="block text-[10px] font-bold text-red-600 uppercase tracking-widest mb-1">
+                  <span className="block text-[10px] font-bold text-red-700 uppercase tracking-widest mb-1">
                     {formatKarateDate(item.date).split(' ')[0]}
                   </span>
                 )}
                 
-                <h3 className="text-lg font-bold text-zinc-900 leading-tight mb-2 uppercase tracking-tight">
+                {/* Kräftigere Titel-Schrift (font-black) */}
+                <h3 className="text-lg font-black text-zinc-900 leading-tight mb-2 uppercase tracking-tight">
                   {item.title}
                 </h3>
                 
-                <p className="text-sm text-zinc-500 font-light leading-relaxed">
+                {/* Beschreibung in gut lesbarem text-zinc-700 und font-medium */}
+                <p className="text-sm text-zinc-700 font-medium leading-relaxed">
                   {item.details}
                 </p>
               </div>

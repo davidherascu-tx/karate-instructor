@@ -27,34 +27,34 @@ const partners = [
 
 export default function PartnerPage() {
   return (
-    // Hier wurde pt-[200px] zu pt-28 md:pt-[200px] geändert, um mobil den Abstand zu reduzieren
     <div className={`w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32 ${montserrat.className}`}>
+      {/* HIER WAR DER FEHLER: mxauto wurde zu mx-auto korrigiert */}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
-{/* Intro Bereich */}
+        {/* Intro Bereich */}
         <div className="max-w-3xl mb-10 md:mb-16">
-          <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
+          <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Netzwerk
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Partner & <br className="hidden md:block" />Auftraggeber
           </h1>
-          <div className="w-20 h-[2px] bg-red-600 mb-6"></div>
-          <p className="text-lg text-zinc-400 font-light tracking-wide">
+          <div className="w-20 h-[3px] bg-red-700 mb-6"></div>
+          <p className="text-lg md:text-xl text-zinc-700 font-medium tracking-wide">
             Vertrauensvolle Zusammenarbeit mit Vereinen, Verbänden und Institutionen aus Sport und Sicherheit.
           </p>
         </div>
 
         {/* Partner Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-zinc-100 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-zinc-200 pt-12">
           {partners.map((partner, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-zinc-50 border border-zinc-100 rounded-2xl hover:bg-white hover:shadow-xl hover:border-red-100 transition-all duration-300 flex flex-col justify-between"
+              className="group p-8 bg-zinc-100 border border-zinc-200 rounded-2xl hover:bg-white hover:shadow-xl hover:border-red-600 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="w-8 h-1 bg-zinc-200 group-hover:bg-red-600 transition-colors mb-6"></div>
-                <h3 className="text-lg font-bold text-zinc-900 uppercase tracking-tight leading-snug mb-4">
+                <div className="w-8 h-1 bg-zinc-300 group-hover:bg-red-700 transition-colors mb-6"></div>
+                <h3 className="text-lg font-black text-zinc-900 uppercase tracking-tight leading-snug mb-4">
                   {partner.name}
                 </h3>
               </div>
@@ -64,21 +64,15 @@ export default function PartnerPage() {
                   href={partner.url} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-red-600 uppercase tracking-widest hover:text-zinc-900 transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-bold text-red-700 uppercase tracking-widest hover:text-zinc-900 transition-colors"
                 >
                   Website besuchen
-                  {/* External Link Icon */}
-                  <svg 
-                    className="w-3 h-3" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
               ) : (
-                <span className="text-[10px] font-bold text-zinc-300 uppercase tracking-[0.2em]">
+                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em]">
                   Regionaler Partner
                 </span>
               )}

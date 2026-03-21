@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-50 text-zinc-900 py-16 border-t border-zinc-200">
+    <footer className="bg-zinc-100 text-zinc-900 py-16 border-t border-zinc-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         
         {/* 1. Spalte: Foto (Shotokan Tiger) */}
@@ -16,12 +16,12 @@ export default function Footer() {
           />
         </div>
 
-        {/* 2. Spalte: Text */}
+        {/* 2. Spalte: Text - Jetzt extrem kontrastreich */}
         <div className="text-center md:text-left">
-          <h4 className="text-lg font-bold uppercase tracking-widest mb-3 text-zinc-900">
+          <h4 className="text-lg font-black uppercase tracking-widest mb-3 text-zinc-900">
             Siegfried Gelz, 6. DAN
           </h4>
-          <p className="text-sm text-zinc-600 leading-relaxed">
+          <p className="text-sm text-zinc-800 font-bold leading-relaxed">
             Trainiert seit 1981 JKA-KARATE,<br />
             davon seit 35 Jahren als Full-Time-Instructor in Berlin.
           </p>
@@ -35,8 +35,8 @@ export default function Footer() {
       </div>
       
       {/* Copyright Line */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-8 border-t border-zinc-200 text-center md:text-left">
-        <p className="text-[10px] tracking-[0.2em] uppercase text-zinc-400 font-bold">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-8 border-t border-zinc-300 text-center md:text-left">
+        <p className="text-[10px] tracking-[0.2em] uppercase text-zinc-600 font-black">
           © {new Date().getFullYear()} Siegfried Gelz
         </p>
       </div>

@@ -17,27 +17,27 @@ export default function Home() {
           }}
         />
 
-        {/* Text Content */}
+{/* Text Content */}
         <div className="flex-1 w-full max-w-2xl text-center md:text-left z-10 pb-12 md:pb-0">
           <div className="w-12 h-1 bg-red-600 mb-8 mx-auto md:mx-0"></div>
           
-          {/* Hauptfokus: Karate Instructor */}
           <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-black text-zinc-900 uppercase tracking-tighter mb-4 leading-[0.9]">
             Karate <br />
             Instructor
           </h1>
           
-          {/* Name etwas kleiner darunter */}
-          <h2 className="text-xl md:text-3xl xl:text-4xl font-light text-zinc-600 tracking-[0.2em] uppercase mb-8">
+          {/* Dunkleres Grau für den Namen */}
+          <h2 className="text-xl md:text-3xl xl:text-4xl font-medium text-zinc-800 tracking-[0.2em] uppercase mb-8">
             Siegfried Gelz
           </h2>
           
-          <p className="text-base md:text-lg xl:text-xl text-zinc-500 font-light leading-relaxed mb-10 max-w-lg xl:max-w-2xl mx-auto md:mx-0">
+          {/* Deutlich dunkleres Grau und normale Schriftstärke für besseren Kontrast */}
+          <p className="text-base md:text-lg xl:text-xl text-zinc-700 leading-relaxed mb-10 max-w-lg xl:max-w-2xl mx-auto md:mx-0">
             Willkommen auf der offiziellen Website von Siegfried Gelz. Als Karate Instructor mit dem 6. Dan widme ich mein Leben der Perfektionierung und Weitergabe der traditionellen Kampfkunst. Erfahren Sie mehr über meine Philosophie, meine Erfolge und wie auch Sie den Weg des Karate beschreiten können.
           </p>
           
           <a 
-            href="#kontakt" 
+            href="/kontakt" 
             className="inline-block bg-zinc-900 text-white font-bold px-10 py-5 uppercase tracking-[0.2em] text-xs xl:text-sm hover:bg-red-600 transition-colors duration-300 shadow-xl"
           >
             Training anfragen

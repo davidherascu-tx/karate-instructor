@@ -9,7 +9,7 @@ const navItems = [
   { name: "Dienstleistungen", href: "/dienstleistungen" },
   { name: "Partner", href: "/partner" },
   { name: "DOJO/Training", href: "/dojo" },
-  { name: "Fotos", href: "/#fotos" },
+  { name: "Fotos", href: "/fotos" },
   { name: "Videos", href: "/videos" },
   { name: "Literaturtipps", href: "/literaturtipps" },
   { name: "Kontakt", href: "/kontakt" }
@@ -46,13 +46,14 @@ export default function Navbar() {
       <div className="bg-zinc-950 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between md:justify-center items-center py-3 md:py-4">
           
-          {/* LOGO BEREICH - Jetzt auch auf Mobile mit "Karate Instructor" */}
           <Link href="/" className="flex flex-col md:flex-row md:items-center text-white no-underline">
             <span className="text-lg md:text-xl font-bold tracking-widest uppercase leading-none">
               Siegfried Gelz
             </span>
-            <span className="hidden md:inline text-red-600 font-light mx-3">|</span>
-            <span className="text-[9px] md:text-xl text-zinc-400 tracking-[0.3em] md:tracking-widest uppercase mt-1 md:mt-0 font-bold md:font-normal leading-none">
+            {/* Trennstrich in kräftigerem Rot */}
+            <span className="hidden md:inline text-red-700 font-bold mx-3">|</span>
+            {/* "Karate Instructor" heller gemacht (zinc-300 statt zinc-400), damit es auf Schwarz besser lesbar ist */}
+            <span className="text-[9px] md:text-xl text-zinc-300 tracking-[0.3em] md:tracking-widest uppercase mt-1 md:mt-0 font-bold leading-none">
               Karate Instructor
             </span>
           </Link>
@@ -74,16 +75,16 @@ export default function Navbar() {
       </div>
 
       {/* 2. Zeile: Navigation mit weißem Hintergrund */}
-      <div className="bg-white/95 backdrop-blur-md shadow-sm">
+      <div className="bg-white/95 backdrop-blur-md shadow-sm border-b border-zinc-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Desktop Menu */}
-          <div className="hidden md:flex justify-center py-3 border-b border-zinc-100">
+          {/* Desktop Menu - Extremer Kontrast (zinc-800 und font-black) */}
+          <div className="hidden md:flex justify-center py-3">
             <div className="flex space-x-6 lg:space-x-8">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-[10px] lg:text-xs font-bold tracking-[0.2em] text-zinc-500 hover:text-red-600 transition-colors uppercase whitespace-nowrap"
+                  className="text-[10px] lg:text-xs font-black tracking-[0.2em] text-zinc-800 hover:text-red-700 transition-colors uppercase whitespace-nowrap"
                 >
                   {item.name}
                 </Link>
@@ -93,16 +94,16 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu Dropdown - Ebenfalls starker Kontrast */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-zinc-200 shadow-xl absolute w-full">
+        <div className="md:hidden bg-white border-b border-zinc-300 shadow-2xl absolute w-full">
           <div className="px-4 pt-4 pb-6 space-y-1 flex flex-col">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-3 py-3 text-sm font-bold tracking-widest text-zinc-600 hover:text-red-600 hover:bg-zinc-50 uppercase text-center"
+                className="block px-3 py-3 text-sm font-black tracking-widest text-zinc-900 hover:text-red-700 hover:bg-zinc-100 uppercase text-center"
               >
                 {item.name}
               </Link>

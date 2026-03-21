@@ -21,7 +21,7 @@ const videos = [
   {
     title: "2. Ambrosius-Cup Berlin 2007",
     description: "Demo 2 (3.25 min)",
-    youtubeId: "DI8i_f2gp3c" // Korrigierte ID!
+    youtubeId: "DI8i_f2gp3c"
   },
   {
     title: "JKA Special Summer Course 1994 (Teil 1)",
@@ -55,31 +55,27 @@ export default function VideosPage() {
     <div className={`w-full bg-white min-h-screen pt-28 md:pt-[200px] pb-32 ${montserrat.className}`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
-{/* Intro Bereich */}
+        {/* Intro Bereich - Kontraststark */}
         <div className="max-w-3xl mb-10 md:mb-16 text-left">
-          {/* mb-4: Gleicher Abstand zur Hauptüberschrift wie auf den anderen Seiten */}
-          <p className="text-red-600 font-bold tracking-[0.4em] uppercase text-xs mb-4">
+          <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
             // Videothek
           </p>
-          {/* leading-[0.95]: Genug Platz für das "Ü" */}
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-8">
             Wettkämpfe & <br className="hidden md:block" />Vorführungen
           </h1>
-          <div className="w-20 h-[2px] bg-red-600 mb-8"></div>
-          <p className="text-lg md:text-xl text-zinc-500 font-light leading-relaxed max-w-2xl">
+          <div className="w-20 h-[3px] bg-red-700 mb-8"></div>
+          <p className="text-lg md:text-xl text-zinc-700 font-medium leading-relaxed max-w-2xl">
             Historische Aufnahmen, Lehrgänge und inspirierende Momente aus über 35 Jahren Karate-Do.
           </p>
         </div>
 
         {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-16 border-t border-zinc-100 pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-16 border-t-[3px] border-zinc-200 pt-16">
           {videos.map((video, index) => (
             <div key={index} className="flex flex-col group">
-              {/* Iframe Container mit 16:9 Aspect Ratio (Responsive) */}
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-zinc-100 mb-6 shadow-sm group-hover:shadow-xl transition-shadow duration-500 border border-zinc-100">
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-zinc-100 mb-6 shadow-sm group-hover:shadow-xl transition-shadow duration-500 border border-zinc-200">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  // youtube-nocookie.com für Datenschutz!
                   src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
                   title={video.title}
                   frameBorder="0"
@@ -88,12 +84,12 @@ export default function VideosPage() {
                 ></iframe>
               </div>
               
-              {/* Text unter dem Video */}
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-zinc-900 uppercase tracking-tight mb-2 group-hover:text-red-600 transition-colors">
+                {/* Titel & Text mit starkem Kontrast */}
+                <h3 className="text-xl md:text-2xl font-black text-zinc-900 uppercase tracking-tight mb-2 group-hover:text-red-700 transition-colors">
                   {video.title}
                 </h3>
-                <p className="text-zinc-500 font-light leading-relaxed">
+                <p className="text-zinc-700 font-medium leading-relaxed">
                   {video.description}
                 </p>
               </div>
