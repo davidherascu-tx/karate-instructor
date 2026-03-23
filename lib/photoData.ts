@@ -82,8 +82,7 @@ export const photoData = [
           { src: "/fotos/karate/karate/1_berliner_team_katae_cup_2025.jpg", description: "1. Berliner Team Kata Cup 2025 (11.10.) SC Berlin e.V., 14 Teams, 11 Medailienplätze" },
           { src: "/fotos/karate/karate/1_berliner_team_katae_cup_2025_2.jpg", description: "1. Berliner Team Kata Cup 2025 Sieger in der Oberstube. Hung Nguyen Duc (4. Dan), Konstantin Skudler (3. Dan), Alexander Skudler (1.Dan) Meisterschüler!!!" },
           { src: "/fotos/karate/karate/1_berliner_team_katae_cup_2025_3.jpg", description: "1. Berliner Team Kata Cup 2025 Älteste Teilnehmer aus der SCB Morning Class, Heinz Rygoll (85 J.), Peter Krol (70 J.), Diethard Heyer (81 J.) v.l.n.r Silbermedaile" },
-          { src: "/fotos/karate/karate/JKD_Pruefung_11_2025.jpg", description: "JKD Prüfungs- und Jubiläumslehrgang 20 Jahre Karate im Berliner TSC 11/2025" },
-          { src: "/fotos/karate/karate/JKD_Pruefung_11_2025_2.jpg", description: "JKD Prüfungs- und Jubiläumslehrgang 20 Jahre Karate im Berliner TSC 11/2025" }
+          { src: "/fotos/karate/karate/JKD_Pruefung_11_2025.jpg", description: "JKD Prüfungs- und Jubiläumslehrgang 20 Jahre Karate im Berliner TSC 11/2025" }
         ]
       },
       { 
