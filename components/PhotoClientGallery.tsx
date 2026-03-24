@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom"; // NEU: Das Zoom-Plugin importieren
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 
@@ -113,15 +114,19 @@ export default function PhotoClientGallery({ data }: { data: MainCategory[] }) {
         </div>
       )}
 
-      {/* 4. Lightbox mit closeOnBackdropClick */}
+      {/* 4. Lightbox */}
       <Lightbox
-        plugins={[Captions]}
+        // NEU: Zoom-Plugin zum Array hinzugefügt
+        plugins={[Captions, Zoom]} 
         index={lightboxIndex}
         open={lightboxIndex >= 0}
         close={() => setLightboxIndex(-1)}
         slides={lightboxSlides}
-        // HIER IST DIE NEUE ZEILE:
         controller={{ closeOnBackdropClick: true }}
+        // Optional: Hier kannst du den Zoom noch anpassen, die Standardwerte sind aber für Mobile schon super (Doppeltippen & Zwei-Finger-Zoom)
+        zoom={{
+          maxZoomPixelRatio: 3, // Erlaubt 3-fache Vergrößerung
+        }}
         styles={{ 
           container: { backgroundColor: "rgba(9, 9, 11, 0.98)" },
           captionsDescription: { 
