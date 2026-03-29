@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Kontakt | Siegfried Gelz",
+  title: "Kontakt | Siegfried Gelz ",
   description: "Nehmen Sie Kontakt mit Siegfried Gelz auf für Karate-Training, Coaching oder Anfragen.",
 };
 
