@@ -24,16 +24,21 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
+      // Wir lesen die Antwort vom Server aus, egal ob erfolgreich oder Fehler
+      const result = await response.json();
+
       if (response.ok) {
         setIsSuccess(true);
-        // Formular leeren
         setFormData({ name: "", email: "", subject: "Allgemeine Anfrage", message: "", honeypot: "" });
         setTimeout(() => setIsSuccess(false), 5000);
       } else {
-        alert("Es gab ein Problem beim Senden der Nachricht.");
+        // HIER IST DIE ÄNDERUNG: Wir geben den echten Fehler in der Konsole und als Alert aus!
+        console.error("Resend API Fehler:", result);
+        alert(`Fehler vom Server: ${result.error?.message || "Bitte schau in die Browser-Konsole (F12)"}`);
       }
     } catch (error) {
-      alert("Ein Fehler ist aufgetreten.");
+      console.error("Netzwerk/Fetch Fehler:", error);
+      alert("Ein schwerer Fehler ist aufgetreten. Server nicht erreichbar.");
     } finally {
       setIsSubmitting(false);
     }
