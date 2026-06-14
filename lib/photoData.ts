@@ -84,7 +84,9 @@ export const photoData = [
           { src: "/fotos/karate/karate/1_berliner_team_katae_cup_2025_3.jpg", description: "1. Berliner Team Kata Cup 2025 Älteste Teilnehmer aus der SCB Morning Class, Heinz Rygoll (85 J.), Peter Krol (70 J.), Diethard Heyer (81 J.) v.l.n.r Silbermedaile" },
           { src: "/fotos/karate/karate/JKD_Pruefung_11_2025.jpg", description: "JKD Prüfungs- und Jubiläumslehrgang 20 Jahre Karate im Berliner TSC 11/2025" },
           { src: "/fotos/karate/karate/04_2026_AJKA-Cup.webp", description: "04/2026 Erfolgreiche SCB-Karateka beim AJKA-Cup" },
-          { src: "/fotos/karate/karate/2026_30_jahre_fujinaga_berlin.webp", description: "05/2026 30 Jahre Vereinsjubiläum Fujinaga Berlin e.V. Training mit Nemoto Takechiyo " }
+          { src: "/fotos/karate/karate/2026_arimoto_jkd_gasshuku.webp", description: "06/2026 SCB-Trainer und Übungsleiter beim JKD-Gasshuku mit Arimoto-Sensei in Schwerin" },
+          { src: "/fotos/karate/karate/jkd_gasshuku_2026.webp", description: "Es war sehr lehrreich." }
+          
         ]
       },
       { 
