@@ -88,7 +88,7 @@ export const photoData = [
           { src: "/fotos/karate/karate/jkd_gasshuku_2026.webp", description: "Es war sehr lehrreich." },
           { src: "/fotos/karate/karate/hung_duc_musiklehrer.webp", description: "06/2026 Meisterschüler Hung Nguyen Duc 4.Dan DKV/WKF Beruf: Musiklehrer" },
           { src: "/fotos/karate/karate/konstantin_skudler.webp", description: "06/2026 Meisterschüler Konstantin Skudler 3.Dan DKV/WKF Beruf: Wissenschaftler/Physik \"Multi-Talent\" und mehrfacher Weltmeister im Gedächnissport" },
-          { src: "/fotos/karate/karate/taguchi_yukihiro.webp", description: "06/2026 Meisterschüler Taguchi Yukihiro 5.Dan JKA Beruf: Künstler" },
+          { src: "/fotos/karate/karate/taguchi_yukihiro.webp", description: "06/2026 Meisterschüler Taguchi Yukihiro 4.Dan JKA Beruf: Künstler" },
           { src: "/fotos/karate/karate/kalligraphie_taguchi.webp", description: "Kalligraphie von Taguchi, Yukihiro 4.Dan JKA \"Karate-Do & kunst\"" },
           { src: "/fotos/karate/karate/45_jahre.webp", description: "Karikatur zum Jubiläum. Karate-Start 1981 in Schwerin ... Und heute: immer noch Spass daran!!!" },
         ]
