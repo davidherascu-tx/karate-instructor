@@ -85,8 +85,12 @@ export const photoData = [
           { src: "/fotos/karate/karate/JKD_Pruefung_11_2025.jpg", description: "JKD Prüfungs- und Jubiläumslehrgang 20 Jahre Karate im Berliner TSC 11/2025" },
           { src: "/fotos/karate/karate/04_2026_AJKA-Cup.webp", description: "04/2026 Erfolgreiche SCB-Karateka beim AJKA-Cup" },
           { src: "/fotos/karate/karate/2026_arimoto_jkd_gasshuku.webp", description: "06/2026 SCB-Trainer und Übungsleiter beim JKD-Gasshuku mit Arimoto-Sensei in Schwerin" },
-          { src: "/fotos/karate/karate/jkd_gasshuku_2026.webp", description: "Es war sehr lehrreich." }
-          
+          { src: "/fotos/karate/karate/jkd_gasshuku_2026.webp", description: "Es war sehr lehrreich." },
+          { src: "/fotos/karate/karate/hung_duc_musiklehrer.webp", description: "06/2026 Meisterschüler Hung Nguyen Duc 4.Dan DKV/WKF Beruf: Musiklehrer" },
+          { src: "/fotos/karate/karate/konstantin_skudler.webp", description: "06/2026 Meisterschüler Konstantin Skudler 3.Dan DKV/WKF Beruf: Wissenschaftler/Physik \"Multi-Talent\" und mehrfacher Weltmeister im Gedächnissport" },
+          { src: "/fotos/karate/karate/taguchi_yukihiro.webp", description: "06/2026 Meisterschüler Taguchi Yukihiro 5.Dan JKA Beruf: Künstler" },
+          { src: "/fotos/karate/karate/kalligraphie_taguchi.webp", description: "Kalligraphie von Taguchi, Yukihiro 4.Dan JKA \"Karate-Do & kunst\"" },
+          { src: "/fotos/karate/karate/45_jahre.webp", description: "Karikatur zum Jubiläum. Karate-Start 1981 in Schwerin ... Und heute: immer noch Spass daran!!!" },
         ]
       },
       { 
@@ -259,8 +263,17 @@ export const photoData = [
           { src: "/fotos/sonstiges/2025_skatrunde-scaled.jpg", description: "2025er Skatrunde Zinnowitz" },
           { src: "/fotos/sonstiges/2025_peenemuende.jpg", description: "04/2025 Besuch in Peenemünde" },
           { src: "/fotos/sonstiges/2025_veteranentreffen.jpg", description: "05/2025 Veteranentreffen in Fresendorf" },
-          { src: "/fotos/sonstiges/2025_8_mai.jpg", description: "8. Mai 2025 Feiertag in Berlin" }
-        
+          { src: "/fotos/sonstiges/2025_8_mai.jpg", description: "8. Mai 2025 Feiertag in Berlin" } ,
+          { src: "/fotos/sonstiges/bella.webp", description: "1998 Meine AmStaff Bella" },
+          { src: "/fotos/sonstiges/enkel_nr1.webp", description: "01/2026 \"Enkel Nr. 1\" Jetzt im Hundehimmel R.I.P" },
+          { src: "/fotos/sonstiges/bild_der_eltern.webp", description: "Ein Bild aus dem Leben meiner Eltern" },
+          { src: "/fotos/sonstiges/erinnerung_vater.webp", description: "Erinnerung an meinen Vater" },
+          { src: "/fotos/sonstiges/flugzeug.webp", description: "Es ist 37 Jahre her... Unsere Maschine am Originalstandort in den \"Black-Hills\"" },
+          { src: "/fotos/sonstiges/letzte_uebung_1989.webp", description: "Sommer 1989. Es war die letzte grosse Übung..." },
+          { src: "/fotos/sonstiges/flugplatzfest_2026.webp", description: "07/2026 wiedersehen beim Flugplatzfest in Cottbus" },
+          { src: "/fotos/sonstiges/taguchi_atelier.webp", description: "Im Atelier von Taguchi, Yukihiro. Spezialitäten: Textildruck MOKUME BERLIN" },
+          { src: "/fotos/sonstiges/hung_doc_gitarre.webp", description: "Hung Nguyen Duc Klassische Gitarre... Ein der besten Lehrer in Deutschland" },
+          { src: "/fotos/sonstiges/konstantin_chor.webp", description: "Konstantin Skudler Musikalisch im Chor www.neuerkammerchorberlin.de" }
         ] }
     ]
   }
