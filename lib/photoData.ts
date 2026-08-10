@@ -69,7 +69,7 @@ export const photoData = [
           { src: "/fotos/karate/karate/IMG-20240714-WA0000.jpg", description: "06/2024 Fujinaga-Schüler aus Berlin und Leipzig nach dem Lehrgang mit Nemoto-Sensei" },
           { src: "/fotos/karate/karate/2024-TL-Ruhlsdorf-Gruppenfoto_v2.jpg", description: "08/2024 SCB-Trainingslager Ruhlsdorf" },   
           { src: "/fotos/karate/karate/IMG-20240912-WA0002.jpg", description: "09/2024 - SC Berlin e.V. Karate-Dojo Lichtenberg" },
-          { src: "/fotos/karate/karate/2024_Pruefungskommissision.jpg", description: "11/2024 Mit Kokubun Sensei und Helge W. in der KKV-Prüfungskommission für Christopher K. zum 6.Dan" },
+          { src: "/fotos/karate/karate/2024_Pruefungskommissision.jpg", description: "11/2024 Mit Kokubun Sensei und Helge W. in der DKV-Prüfungskommission für Christopher K. zum 6.Dan" },
           { src: "/fotos/karate/karate/2024_Kazoku-Cup.jpg", description: "12/2024 Ein strakes Team des SC Berlin e.V. beim Kazoku-Cup in Höhenschonhausen" },
           { src: "/fotos/karate/karate/2024_DKV-Pruefung-scaled.jpg", description: "11/2024 Traditionell erfolgreich Mit Frank Herrmann als DKV-A-Prüfer in Berlin" },
           { src: "/fotos/karate/karate/auszeichnung_BKV.jpg", description: "03/2025 Eine besondere Auszeichnung vom Berliner Karate Verband" },
