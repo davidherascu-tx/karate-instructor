@@ -4,9 +4,18 @@ import LiteraturClientGallery from "@/components/LiteraturClientGallery";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Literaturtipps | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Literaturtipps",
   description: "Empfehlungen für Bücher und Medien über Karate-Do und Samurai-Philosophie.",
+  keywords: ["Karate Bücher", "Martial Arts Literatur", "Samurai Bücher", "Karate-Do Empfehlungen", "Budo Literatur"],
+  openGraph: {
+    title: "Literaturtipps | Siegfried Gelz",
+    description: "Empfehlungen für Bücher und Medien über Karate-Do und Samurai-Philosophie.",
+    url: "/literaturtipps",
+  },
+  alternates: { canonical: "/literaturtipps" },
 };
 
 export default function LiteraturtippsPage() {
@@ -26,7 +35,7 @@ export default function LiteraturtippsPage() {
         {/* Intro Bereich - Kontraststark */}
         <div className="max-w-4xl mb-10 md:mb-16 text-left">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Empfehlungen
+            {'// Empfehlungen'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-8">
             Literaturtipps

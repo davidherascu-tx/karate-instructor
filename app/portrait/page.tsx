@@ -1,8 +1,17 @@
 import Image from "next/image";
 
-export const metadata = {
-  title: "Portrait | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portrait",
   description: "Werdegang, Erfolge und Qualifikationen von Siegfried Gelz, 6. Dan Shotokan Karate-Do.",
+  keywords: ["Siegfried Gelz Portrait", "Karate Lebenslauf", "6. Dan JKA", "Shotokan Karate Werdegang", "Dan-Prüfungen"],
+  openGraph: {
+    title: "Portrait | Siegfried Gelz",
+    description: "Werdegang, Erfolge und Qualifikationen von Siegfried Gelz, 6. Dan Shotokan Karate-Do.",
+    url: "/portrait",
+  },
+  alternates: { canonical: "/portrait" },
 };
 
 export default function PortraitPage() {
@@ -48,9 +57,9 @@ export default function PortraitPage() {
             
             {/* --- HEADER --- */}
             <div className="mb-16 md:mb-20 text-left">
-              <h3 className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-                // Portrait
-              </h3>
+              <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
+                {'// Portrait'}
+              </p>
               <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
                 Siegfried Gelz
               </h1>

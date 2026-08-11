@@ -1,8 +1,15 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Erfolge | Siegfried Gelz",
+export const metadata: Metadata = {
+  title: "Erfolge",
   description: "Wettkampferfolge, Meisterschaften und Auszeichnungen von Siegfried Gelz, 6. Dan.",
+  keywords: ["Karate Erfolge", "Karate Wettkampf", "Kata Meisterschaft", "SKDUN World Cup", "Karate Auszeichnungen"],
+  openGraph: {
+    title: "Erfolge | Siegfried Gelz",
+    description: "Wettkampferfolge, Meisterschaften und Auszeichnungen von Siegfried Gelz, 6. Dan.",
+    url: "/erfolge",
+  },
+  alternates: { canonical: "/erfolge" },
 };
 
 const achievements = [
@@ -53,7 +60,7 @@ export default function ErfolgePage() {
         {/* Intro - Kontrastreich & mit exaktem leading-[0.95] */}
         <div className="max-w-3xl mb-10 md:mb-12">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Erfolge
+            {'// Erfolge'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Wettkampf & <br className="hidden md:block" />Auszeichnungen
@@ -83,9 +90,9 @@ export default function ErfolgePage() {
                 )}
                 
                 {/* Kräftigere Titel-Schrift (font-black) */}
-                <h3 className="text-lg font-black text-zinc-900 leading-tight mb-2 uppercase tracking-tight">
+                <h2 className="text-lg font-black text-zinc-900 leading-tight mb-2 uppercase tracking-tight">
                   {item.title}
-                </h3>
+                </h2>
                 
                 {/* Beschreibung in gut lesbarem text-zinc-700 und font-medium */}
                 <p className="text-sm text-zinc-700 font-medium leading-relaxed">

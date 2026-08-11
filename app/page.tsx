@@ -21,14 +21,13 @@ export default function Home() {
         <div className="flex-1 w-full max-w-2xl text-center md:text-left z-10 pb-12 md:pb-0">
           <div className="w-12 h-1 bg-red-600 mb-8 mx-auto md:mx-0"></div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-black text-zinc-900 uppercase tracking-tighter mb-4 leading-[0.9]">
+          <h1 className="text-xl md:text-3xl xl:text-4xl font-medium text-zinc-800 tracking-[0.2em] uppercase mb-2">
+            Siegfried Gelz
+          </h1>
+
+          <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-black text-zinc-900 uppercase tracking-tighter mb-4 leading-[0.9]">
             Karate <br />
             Instructor
-          </h1>
-          
-          {/* Dunkleres Grau für den Namen */}
-          <h2 className="text-xl md:text-3xl xl:text-4xl font-medium text-zinc-800 tracking-[0.2em] uppercase mb-8">
-            Siegfried Gelz
           </h2>
           
           {/* Deutlich dunkleres Grau und normale Schriftstärke für besseren Kontrast */}

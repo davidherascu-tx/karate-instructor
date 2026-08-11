@@ -2,9 +2,18 @@ import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Partner & Auftraggeber | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Partner & Auftraggeber",
   description: "Zusammenarbeit mit nationalen Verbänden, Vereinen und Sicherheitsgesellschaften.",
+  keywords: ["Karate Partner", "DKV", "SC Berlin Karate", "Karate Verbände", "Sicherheitsgesellschaft"],
+  openGraph: {
+    title: "Partner & Auftraggeber | Siegfried Gelz",
+    description: "Zusammenarbeit mit nationalen Verbänden, Vereinen und Sicherheitsgesellschaften.",
+    url: "/partner",
+  },
+  alternates: { canonical: "/partner" },
 };
 
 const partners = [
@@ -34,7 +43,7 @@ export default function PartnerPage() {
         {/* Intro Bereich */}
         <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Netzwerk
+            {'// Netzwerk'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Partner & <br className="hidden md:block" />Auftraggeber
@@ -54,9 +63,9 @@ export default function PartnerPage() {
             >
               <div>
                 <div className="w-8 h-1 bg-zinc-300 group-hover:bg-red-700 transition-colors mb-6"></div>
-                <h3 className="text-lg font-black text-zinc-900 uppercase tracking-tight leading-snug mb-4">
+                <h2 className="text-lg font-black text-zinc-900 uppercase tracking-tight leading-snug mb-4">
                   {partner.name}
-                </h3>
+                </h2>
               </div>
 
               {partner.url ? (

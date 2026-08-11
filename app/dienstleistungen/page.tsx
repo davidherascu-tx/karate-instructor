@@ -1,6 +1,15 @@
-export const metadata = {
-  title: "Dienstleistungen | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dienstleistungen",
   description: "Professionelles Karate-Training, Coaching und Spezialkurse von Siegfried Gelz.",
+  keywords: ["Karate Kurs", "Selbstverteidigung Kurs", "Karate Personal Coaching", "Karate Trainingslager", "Budo Show", "Nahkampf Kurs"],
+  openGraph: {
+    title: "Dienstleistungen | Siegfried Gelz",
+    description: "Professionelles Karate-Training, Coaching und Spezialkurse von Siegfried Gelz.",
+    url: "/dienstleistungen",
+  },
+  alternates: { canonical: "/dienstleistungen" },
 };
 
 const services = [
@@ -44,7 +53,7 @@ export default function DienstleistungenPage() {
         {/* Intro Bereich - Kontraststark & Mobil optimiert */}
         <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Dienstleistungen & Angebot
+            {'// Dienstleistungen & Angebot'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Expertise in <br className="hidden md:block" />Kampfkunst

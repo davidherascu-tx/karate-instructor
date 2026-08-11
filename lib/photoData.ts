@@ -91,6 +91,12 @@ export const photoData = [
           { src: "/fotos/karate/karate/taguchi_yukihiro.webp", description: "06/2026 Meisterschüler Taguchi Yukihiro 4.Dan JKA Beruf: Künstler" },
           { src: "/fotos/karate/karate/kalligraphie_taguchi.webp", description: "Kalligraphie von Taguchi, Yukihiro 4.Dan JKA \"Karate-Do & kunst\"" },
           { src: "/fotos/karate/karate/45_jahre.webp", description: "Karikatur zum Jubiläum. Karate-Start 1981 in Schwerin ... Und heute: immer noch Spass daran!!!" },
+          { src: "/fotos/karate/karate/2026_scb_sommer_camp.webp", description: "08/2026 SCB Sommer Camp in Ruhlsdorf" },
+          { src: "/fotos/karate/karate/2026_jahresschlumpf.webp", description: "Der JahresSchlumpf 2026 für Ruhlsdorf" },
+          { src: "/fotos/karate/karate/2026_giants_berlin.webp", description: "08/2026 Die GIANTS Berlin sind zum 10.mal im Feriendorf DORADO" },
+          { src: "/fotos/karate/karate/2026_krafttraining.webp", description: "08/2026 Krafttraining mit Spassfaktor" },
+          { src: "/fotos/karate/karate/teubner_humboldt.webp", description: "Dr.Olaf Teubner Michi He No Mon Oranienburg e.V. ... Zu Gast in Ruhlsdorf. Wir waren Gefährten im Dojo der Humboldt Universität zu Berlin" },
+          { src: "/fotos/karate/karate/2026_master_camp.webp", description: "Oktober 2026 Da \"steppt der Bär\" in Berlin ..." },
         ]
       },
       { 

@@ -3,9 +3,18 @@ import ContactForm from "@/components/ContactForm";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Kontakt | Siegfried Gelz ",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kontakt",
   description: "Nehmen Sie Kontakt mit Siegfried Gelz auf für Karate-Training, Coaching oder Anfragen.",
+  keywords: ["Karate Training anfragen", "Karate Kurs Berlin", "Kontakt Siegfried Gelz", "Karate Coaching Anfrage"],
+  openGraph: {
+    title: "Kontakt | Siegfried Gelz",
+    description: "Nehmen Sie Kontakt mit Siegfried Gelz auf für Karate-Training, Coaching oder Anfragen.",
+    url: "/kontakt",
+  },
+  alternates: { canonical: "/kontakt" },
 };
 
 export default function KontaktPage() {
@@ -16,7 +25,7 @@ export default function KontaktPage() {
         {/* Intro Bereich */}
         <div className="max-w-3xl mb-10 md:mb-16 text-left">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Verbindung
+            {'// Verbindung'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-8">
             Kontakt & <br className="hidden md:block" />Anfragen

@@ -4,9 +4,18 @@ import PhotoClientGallery from "@/components/PhotoClientGallery";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Fotos & Galerien | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fotos & Galerien",
   description: "Eindrücke aus Japan, Lehrgängen und Wettkämpfen von Siegfried Gelz.",
+  keywords: ["Karate Fotos", "Karate Japan", "Shotokan Karate Galerie", "Karate Wettkampf Fotos", "Karate Lehrgang Bilder"],
+  openGraph: {
+    title: "Fotos & Galerien | Siegfried Gelz",
+    description: "Eindrücke aus Japan, Lehrgängen und Wettkämpfen von Siegfried Gelz.",
+    url: "/fotos",
+  },
+  alternates: { canonical: "/fotos" },
 };
 
 export default function FotosPage() {
@@ -17,7 +26,7 @@ export default function FotosPage() {
         {/* Intro Bereich - Kontraststark */}
         <div className="max-w-3xl mb-10 md:mb-12 text-left">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Impressionen
+            {'// Impressionen'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-8">
             Foto <br className="hidden md:block" />Galerien

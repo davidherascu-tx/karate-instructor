@@ -2,9 +2,18 @@ import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Videos & Videothek | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Videos & Videothek",
   description: "Eine Sammlung von Karate-Vorführungen, Wettkämpfen und Lehrgängen mit Siegfried Gelz.",
+  keywords: ["Karate Videos", "Kata Vorführung", "Karate Wettkampf Video", "AJKA EuroCup", "Shotokan Karate Film"],
+  openGraph: {
+    title: "Videos & Videothek | Siegfried Gelz",
+    description: "Eine Sammlung von Karate-Vorführungen, Wettkämpfen und Lehrgängen mit Siegfried Gelz.",
+    url: "/videos",
+  },
+  alternates: { canonical: "/videos" },
 };
 
 const videos = [
@@ -58,7 +67,7 @@ export default function VideosPage() {
         {/* Intro Bereich - Kontraststark */}
         <div className="max-w-3xl mb-10 md:mb-16 text-left">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Videothek
+            {'// Videothek'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-8">
             Wettkämpfe & <br className="hidden md:block" />Vorführungen
@@ -86,9 +95,9 @@ export default function VideosPage() {
               
               <div>
                 {/* Titel & Text mit starkem Kontrast */}
-                <h3 className="text-xl md:text-2xl font-black text-zinc-900 uppercase tracking-tight mb-2 group-hover:text-red-700 transition-colors">
+                <h2 className="text-xl md:text-2xl font-black text-zinc-900 uppercase tracking-tight mb-2 group-hover:text-red-700 transition-colors">
                   {video.title}
-                </h3>
+                </h2>
                 <p className="text-zinc-700 font-medium leading-relaxed">
                   {video.description}
                 </p>

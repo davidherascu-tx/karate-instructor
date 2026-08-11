@@ -2,9 +2,18 @@ import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "DOJO & Training | Siegfried Gelz",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "DOJO & Training",
   description: "Trainingszeiten und Standorte für Karate in Berlin: Ostkreuz, Sportforum und Moissistraße.",
+  keywords: ["Karate Berlin", "Karate Dojo Berlin", "Karate Trainingszeiten", "Shotokan Berlin", "Karate Ostkreuz", "Karate Moissistraße"],
+  openGraph: {
+    title: "DOJO & Training | Siegfried Gelz",
+    description: "Trainingszeiten und Standorte für Karate in Berlin: Ostkreuz, Sportforum und Moissistraße.",
+    url: "/dojo",
+  },
+  alternates: { canonical: "/dojo" },
 };
 
 export default function DojoPage() {
@@ -15,7 +24,7 @@ export default function DojoPage() {
         {/* Intro */}
         <div className="max-w-3xl mb-10 md:mb-16">
           <p className="text-red-700 font-bold tracking-[0.4em] uppercase text-xs mb-4">
-            // Trainingsplan
+            {'// Trainingsplan'}
           </p>
           <h1 className="text-4xl md:text-7xl font-black text-zinc-900 uppercase tracking-tighter leading-[0.95] mb-6">
             Dojo & <br className="hidden md:block" />Training
