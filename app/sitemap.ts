@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/videos",           changeFrequency: "monthly", priority: 0.7 },
     { url: "/partner",          changeFrequency: "yearly",  priority: 0.5 },
     { url: "/literaturtipps",   changeFrequency: "yearly",  priority: 0.5 },
+    { url: "/impressum",        changeFrequency: "yearly",  priority: 0.1 },
+    { url: "/datenschutz",      changeFrequency: "yearly",  priority: 0.1 },
   ];
 
   return routes.map(({ url, changeFrequency, priority }) => ({
